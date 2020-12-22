@@ -18,9 +18,6 @@ body {
     border-radius: 5px;
     background-color: white;
 }
-
-/* WELCOME SECTION */
-
 #welcome-section {
     height: 100vh;
     background: linear-gradient(166deg, #3b3759, #000, #4c6e81);
@@ -50,7 +47,6 @@ body {
     color: #FF1177;
     transition: all 0.5s;
 }
-
 @keyframes neon-link {
     from {
       text-shadow: 0 0 10px #fff,
@@ -73,11 +69,9 @@ body {
                  0 0 75px #FF1177;
     }
   }
-
-/* ABOUT SECTION */
-
 #about-section {
     height: 100vh;
+    padding: 20px;
     background: linear-gradient(-166deg, #4c6e81, #000, #3b3759);
     color: honeydew;
     display: flex;
@@ -85,9 +79,15 @@ body {
     justify-content: space-evenly;
 }
 .about-intro {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: honeydew;
     text-align: center;
+}
+.about-intro h1 {
+    color: honeydew;
+    text-shadow: -1px 0 #ff1177, 0 1px #ff1177, 1px 0 #ff1177, 0 -1px #ff1177;
+    font-size: 5rem;
+    margin: 0;
 }
 .about-i-container {
     display: flex;
@@ -98,62 +98,73 @@ body {
 .about-info-wrap {
     width: 50vw;
     display: flex;
-    /* border: 0.01rem solid rgb(212, 255, 20); */
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .about-icon i {
-    font-size: 8rem;
+    font-size: 7rem;
     color: deeppink;
     animation: neon-link 1.5s ease-in-out infinite alternate;
 }
 .about-description {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: justify;
     width: 40vw;
 }
-.about-intro h1 {
-    color: honeydew;
-    text-shadow: -1px 0 #ff1177, 0 1px #ff1177, 1px 0 #ff1177, 0 -1px #ff1177;
-}
-
-/* WORK SECTION */
-
 #work-section {
     height: 100vh;
     background: linear-gradient(166deg, #3b3759, #000, #4c6e81);
-}
-.work-img img {
-    /* height: 2rem; */
-
-}
-.work-img {
-    /* height: 6rem;
-    width: 4rem; */
-    background-color: khaki;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 20px;
 }
-
-/* CONTACT SECTION */
-
-.up-icon {
-    position: absolute;
-    bottom: 10rem;
-    right: 20rem;
+.work-img-wrap {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.up-icon i {
-    font-size: 5rem;
-    color: honeydew;
-    text-shadow: 3px 3px 2px rgba(255, 17, 119, 1);
-    transition: ease-in-out 1s;
+.work-img {
+    height: 20rem;
+    width: 20rem;
+    margin: 2%;
+    opacity: 0.5;
+    box-shadow: -1px 4px 44px -15px rgba(255,255,255,1);
+    border: solid 0.2rem white;
 }
-.up-icon i:hover {
-    color: rgba(255, 17, 119, 1);
-    text-shadow: 3px 3px 2px honeydew;
+.work-img:hover {
+    opacity: 1;
+}
+.img-1 {
+    background-image: url("./assets/web\ 1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-2 {
+    background-image: url("./assets/web\ 2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-3 {
+    background-image: url("./assets/web\ 3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-4 {
+    background-image: url("./assets/web\ 4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-5 {
+    background-image: url("./assets/web\ 5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
 }
 #contact-section {
     height: 100vh;
@@ -162,6 +173,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     font-size: 3rem;
     color: honeydew;
     position: relative;
@@ -170,15 +182,12 @@ body {
     width: 80%;
     display: flex;
     flex-direction: column;
-    /* background-color: yellow; */
 }
 .contact-form-input-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 8rem;
-    /* border: 1px solid gold; */
-    /* height: 100px; */
 }
 input {
     font-size: 2.5rem;
@@ -192,13 +201,10 @@ input {
     margin-left: 1.5rem;
     outline: none;
 }
-.small-input {
-    width: 18rem
-}
 ::placeholder {
     color: #FF1177;
     opacity: 1; 
-  }
+}
 button {
     width: 20rem;
     height: 5rem;
@@ -221,66 +227,18 @@ button:hover {
     color: honeydew;
     text-shadow: -1px 0 #ff1177, 0 1px #ff1177, 1px 0 #ff1177, 0 -1px #ff1177;
 }
-
-/* Responsiveness */
-
-@media screen and (max-width: 1366px) {
-    .nav-link-container {
-        background: blue;
-    }
-    
-    .nav-link-container {
-      width: 300px;
-    }
-
-    .nav-link {
-        font-size: 4rem;
-    }
-  
-
-  .about-intro {
-    font-size: 2rem;
-  }
-
-  .about-info-wrap {
-      width: 80vw;
-    
-  }
-
-  .about-description {
-    font-size: 1.2rem;
-  }
+.up-icon {
+    position: absolute;
+    bottom: 10rem;
+    right: 20rem;
 }
-
-
-@media screen and (max-width: 768px) {
-
-    #contact-section {
-        background: white;
-    }
-
-    .nav-link-container {
-        background-color: blue;
-    }
-
-    #welcome-section {
-        flex-direction: column;
-        background: red;
-    }
-
-    .nav-link-container {
-        background: rgb(0, 255, 76);
-    }
-
-    .about-description {
-        font-size: 1.8rem;
-    } 
+.up-icon i {
+    font-size: 5rem;
+    color: honeydew;
+    text-shadow: 3px 3px 2px rgba(255, 17, 119, 1);
+    transition: ease-in-out 1s;
 }
-
-
-
-@media screen and (max-width: 425px) {
-    #welcome-section {
-        background: yellow;
-    }
-  }
+.up-icon i:hover {
+    color: rgba(255, 17, 119, 1);
+    text-shadow: 3px 3px 2px honeydew;
+}
